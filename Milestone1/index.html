@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Interactive Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .resume-container {
+            display: flex;
+            width: 90%;
+            max-width: 900px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .left-section {
+            width: 30%;
+            padding-right: 20px;
+            background-color: #000; /* Black background for left section */
+            color: #fff; /* White text color for left section */
+        }
+
+        .right-section {
+            width: 70%;
+            padding-left: 20px;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        /* Styles for left section headings and text */
+        .left-section h3 {
+            color: #fff; /* White headings in black section */
+        }
+        .left-section p {
+            color: #ddd; /* Slightly lighter text in black section */
+        }
+
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add more styles as needed */
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="left-section">
+            <img src="profile_225x169.jpg" alt="Profile Picture" class="profile-picture">
+            <section id="objective">
+                <h3>Career Objective</h3>
+                <p style="text-align: justify; hyphens: auto;">To secure an employment opportunity with a progressive organization, where I can utilize my professional skills and knowledge to the maximum and add value to the organization's growth.</p>
+            </section>
+            <section id="certification">
+                <h3>Certification</h3>
+                <p><b>CIT:</b> From NCA Ghari Kapura, Mardan (KPK)</p>
+                <p><b>Artificial Intelligence, Web 3.0 & Metaverse:</b> From Governor House Karachi (Ongoing)</p>
+            </section>
+        </div>
+
+        <div class="right-section">
+            <h1>Static Interactive Resume</h1>
+            <section id="personal-info">
+                <h3>Personal Information</h3>
+                <p><b>Name:</b> Justise Aziz Ullah Khan Yousafzai</p>
+                <p><b>Phone:</b> 0340-9425043 / 0317-9952831</p>
+                <p><b>Email:</b> <a href="mailto:azizullahmardan95@gmail.com">azizullahmardan95@gmail.com</a></p>
+                <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/" target="_blank">www.LinkedIn.com</a></p> 
+            </section>
+            <section id="education">
+                <h3>Education</h3>
+                <p><b>LLB (Ongoing 8th Semester)</b> From Shaheed Zulfiqar Ali Bhutto Law College</p>
+                <p><b>Bachelor</b> Mass Communication From AIOU, Islamabad</p>
+                <p><b>Intermediate:</b> Govt Post Graduate College Mardan (KPK)</p>
+                <p><b>Matriculation:</b> GHS Gumbat Mardan (KPK)</p>
+            </section>
+            <!-- Skills Section -->
+             <Section id="Skills">
+                <h3>Skills</h3>
+                <ul>
+                    <Li>Statistical Analysisi</Li>
+                    <Li>MS Office</Li>
+                    <Li>MS Excell</Li>
+                    <Li>Powerpoint</Li>
+                    <Li>HTML</Li>
+                    <Li>CSS</Li>
+                    <Li>Javascript</Li>
+                    <Li>Communication Skills</Li>
+                </ul>
+             </Section>
+             <!--Work Experience Section-->
+             <section id="work-experience">
+                <h3>Work Experience</h3>
+                <p>Seeking an opportunity as a fresh candidate to start my professional career.</p>
+             </section>
+
+             <!-- Button to toggle Skills Section -->
+              <button id="toggle-skills"><b>Hide/Show Skills</b></button>
+        </div>
+    </div>
+    <script src="script.js"
+</body>
+</html>
